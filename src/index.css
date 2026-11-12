@@ -1,0 +1,59 @@
+/* Bryntum Gantt Stockholm Light Theme */
+@import '@bryntum/gantt-trial/stockholm-light.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FCFAF7;
+    color: #1C1917;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Bryntum Overrides for TRUSTLANCE Brand Aesthetic */
+.b-gantt {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #E7E5E4 !important;
+}
+
+.b-grid-header {
+  background-color: #F5F5F4 !important;
+  font-weight: 600 !important;
+  color: #292524 !important;
+}
+
+.b-gantt-task.delayed-task {
+  background-color: #EF4444 !important;
+  border-color: #DC2626 !important;
+}
+
+.b-gantt-task.recovered-task {
+  background-color: #059669 !important;
+  border-color: #047857 !important;
+}
+
+.b-gantt-task.parallel-task {
+  background-color: #3B82F6 !important;
+  border-color: #2563EB !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6D3D1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
